@@ -17,13 +17,13 @@ public class Produto {
     @JoinColumn(name = "categoria_id", nullable = false)
     private Categoria categoria;
 
-    @Column(nullable = false, precision = 10, scale = 2)
+    @Column(nullable = false)
     private BigDecimal preco;
 
     @Column(name = "quantidade_estoque", nullable = false)
     private int quantidadeEstoque;
 
-    @Column(name = "unidade_medida", nullable = false, length = 20)
+    @Column(name = "unidade_medida", nullable = false)
     private String unidadeMedida;
 
     @Column(name = "codigo_barras", nullable = false, unique = true, length = 50)
